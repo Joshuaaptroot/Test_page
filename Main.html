@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A test page for separating data into SQL and Cosmos DB.">
+    <meta name="keywords" content="web scraping, azure, testing, SQL, Cosmos DB">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Storage Testing Page</title>
+</head>
+<body>
+    <header>
+        <h1>Hybrid Storage Testing Page</h1>
+        <p>This page contains both structured and unstructured data to demonstrate storing data in SQL and Cosmos DB.</p>
+    </header>
+
+    <!-- SQL Data Section -->
+    <section id="sql-data">
+        <h2>Structured Data (SQL)</h2>
+        <p>This section contains structured data suitable for relational databases like SQL.</p>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Apple</td>
+                    <td>Fruit</td>
+                    <td>0.50</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Milk</td>
+                    <td>Dairy</td>
+                    <td>1.20</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bread</td>
+                    <td>Grain</td>
+                    <td>1.00</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><em>SQL Storage Example:</em> A grocery store inventory where relational lookups are needed.</p>
+    </section>
+
+    <!-- Cosmos DB Data Section -->
+    <section id="cosmos-data">
+        <h2>Unstructured Data (Cosmos DB)</h2>
+        <p>This section contains unstructured data better suited for NoSQL databases like Cosmos DB.</p>
+        <div class="unstructured-data">
+            <article>
+                <h3>Customer Feedback 1</h3>
+                <p>
+                    "I love the fresh fruits from this store. The apples are always crispy and delicious. 
+                    However, I wish they had more organic options."
+                </p>
+                <p>- Jane Doe, 12th Nov 2024</p>
+            </article>
+            <article>
+                <h3>Customer Feedback 2</h3>
+                <p>
+                    "The milk quality is excellent, but sometimes the stock runs out quickly. Can you please 
+                    increase the supply? Also, bread could use more variety."
+                </p>
+                <p>- John Smith, 15th Nov 2024</p>
+            </article>
+        </div>
+        <p><em>Cosmos DB Storage Example:</em> Storing freeform customer feedback data.</p>
+    </section>
+
+    <!-- Mixed Data Section -->
+    <section id="mixed-data">
+        <h2>Mixed Data for Both SQL and Cosmos DB</h2>
+        <p>
+            Here is an example of mixed data where parts of the data can be stored in SQL (structured) and others 
+            in Cosmos DB (unstructured):
+        </p>
+        <div>
+            <h3>Product Review</h3>
+            <p><strong>Product ID:</strong> 3</p>
+            <p><strong>Reviewer:</strong> Alice Brown</p>
+            <p><strong>Rating:</strong> 4/5</p>
+            <p>
+                <strong>Review:</strong> "The bread is quite good and fresh most of the time. The crust 
+                is a bit hard, but I like it that way. Great for sandwiches!"
+            </p>
+        </div>
+        <p><em>Hybrid Example:</em> Product details (SQL) and customer reviews (Cosmos DB).</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Hybrid Storage Testing Page. All rights reserved.</p>
+        <a href="https://www.example.com/privacy-policy">Privacy Policy</a>
+    </footer>
+</body>
+</html>
